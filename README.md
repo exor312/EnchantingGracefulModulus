@@ -33,18 +33,19 @@ This is a React application designed to help users manage their fitness routines
    
 2. **Install Dependencies:**:
    Install the necessary packages using npm:
-   npm install
+   ```bash
+   npm Fitness-App
 
 3.   **Running the Application**:
    Once the dependencies are installed, start the development server to begin working    with the application. The development server provides hot reloading for quicker       development and debugging:
-
+   ```bash
    npm run dev
 
    By default, the application will be accessible at http://localhost:5173. You can open this URL in your browser to see the app in action.
 
    Building for Production
    To prepare the application for production deployment, execute the build script:
-
+   
    npm run build
 
 
