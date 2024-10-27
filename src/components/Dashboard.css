@@ -1,0 +1,27 @@
+/* src/components/Dashboard.css */
+.dashboard-container {
+  padding: 20px;
+  text-align: center; /* Center align content as a default */
+}
+
+.dashboard-container h2 {
+  font-size: 24px;
+}
+
+.dashboard-container p {
+  font-size: 16px; /* Ensure legibility in smaller sizes */
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .dashboard-container h2 {
+    font-size: 20px; /* Scale down heading size */
+  }
+
+  .dashboard-container p {
+    font-size: 14px; /* Scale down paragraph font size */
+  }
+}

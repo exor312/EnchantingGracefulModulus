@@ -1,0 +1,74 @@
+/* src/components/Login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* A soothing light grey background */
+}
+
+.login-form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 30px; /* Add spacious padding */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for an elevated look */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333; /* Dark gray for the form title */
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px; /* Ample padding for inputs */
+  margin-bottom: 15px; /* Separate inputs with margin */
+  border: 1px solid #ddd; /* Light border around inputs */
+  border-radius: 5px; /* Rounded edges for inputs */
+  font-size: 16px;
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.login-form input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Blue background for submit */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error-message {
+  color: #e74c3c; /* Red color for error messages */
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.login-form button[type="button"] {
+  background-color: transparent;
+  color: #007bff; /* Blue text for register link */
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 14px; /* Consistent with error message size */
+}
+
+.login-form button[type="button"]:hover {
+  color: #0056b3; /* Darker blue on hover */
+}

@@ -1,0 +1,121 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.hamburger {
+  display: none; /* Hidden by default; show only on mobile */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a,
+.logout-btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.navbar-links a:hover,
+.logout-btn:hover {
+  background-color: #155a9c;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+}
+
+/* Drawer styling for mobile */
+.drawer {
+  display: none; /* Hidden by default */
+}
+
+.drawer.open {
+  left: 0;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Display the hamburger menu on mobile */
+  }
+
+  .navbar-links {
+    display: none; /* Hide the classic navbar on mobile */
+  }
+
+  .drawer {
+    display: block; /* Display the drawer */
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100vh;
+    background-color: #1976d2;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .drawer.open {
+    left: 0; /* Slide in from the left */
+  }
+
+  .drawer-links {
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .drawer-links li {
+    margin: 15px 0;
+  }
+
+  .drawer-links a,
+  .logout-btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .drawer-links a:hover,
+  .logout-btn:hover {
+    background-color: #155a9c;
+  }
+
+  .logout-btn {
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+}
